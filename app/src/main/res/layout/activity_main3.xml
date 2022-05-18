@@ -9,34 +9,49 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register Yourself"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="#0288D1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"/>
-
+        android:layout_marginTop="50dp"
+        android:text="Register Yourself"
+        android:textColor="#0288D1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imgDp"
         android:layout_width="150dp"
         android:layout_height="139dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="130dp"
         android:src="@drawable/profile" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imgDp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColorHint="#000000" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
         android:ems="10"
         android:hint="Enter Email"
         android:inputType="textEmailAddress"
-        android:textColorHint="#000000"
-        android:textStyle="bold"/>
+        android:padding="10dp"
+        android:textColorHint="#000000" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -45,11 +60,12 @@
         android:layout_below="@+id/etEmail"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
         android:ems="10"
         android:hint="Enter Password"
-        android:textStyle="bold"
-        android:textColorHint="#000000"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="#000000" />
 
     <Button
         android:id="@+id/btnSignup"
@@ -57,24 +73,22 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00B8D4"
         android:text="Sign up"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:backgroundTint="#00B8D4"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account?"
-        android:textColor="#000000"
-        android:textStyle="italic"
-        android:textSize="18sp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"/>
-
+        android:layout_marginBottom="20dp"
+        android:text="Already have an account?"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>

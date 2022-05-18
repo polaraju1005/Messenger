@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- action button for search -->
+    <item android:title="search"
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_search_24"/>
+
+    <item android:title="New Group"
+        android:id="@+id/newGroup"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:title="New Broadcast"
+        android:id="@+id/newBroadcast"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:title="Linked devices"
+        android:id="@+id/linkedDevices"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:title="Starred messages"
+        android:id="@+id/starredMessages"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:title="Payments"
+        android:id="@+id/payments"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:title="settings"
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:title="Logout"
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+</menu>

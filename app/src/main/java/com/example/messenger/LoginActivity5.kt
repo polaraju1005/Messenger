@@ -1,6 +1,8 @@
 package com.example.messenger
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,7 +21,10 @@ class LoginActivity5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login5)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        title = "User Login"
+        val actionBar = supportActionBar
+
+        actionBar!!.hide()
+
         email = findViewById(R.id.etLoginEmail)
         password = findViewById(R.id.etLoginPassword)
         login = findViewById(R.id.btnLogin)
@@ -36,18 +41,19 @@ class LoginActivity5 : AppCompatActivity() {
         }
     }
 
+
     private fun login() {
         auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
             .addOnCompleteListener {
                 if (it.isSuccessful) {
                     val i = Intent(this, ChatActivity5::class.java)
+                    finish()
                     startActivity(i)
                 } else {
                     Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT).show()
                 }
             }
     }
-
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true

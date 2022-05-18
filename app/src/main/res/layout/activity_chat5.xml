@@ -7,13 +7,46 @@
     tools:context=".ChatActivity5">
 
     <TextView
+        android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Chats will be appear here"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome!"
         android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:textStyle="bold"/>
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginStart="20dp"
+        android:text="Sairaj"
+        android:textColor="#651FFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/home_recycler_view"
+        android:layout_below="@+id/txtUser" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imgBtn"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_bg"
+        android:backgroundTint="#21ACD6"
+        android:src="@drawable/ic_baseline_mode_comment_24" />
 
 </RelativeLayout>

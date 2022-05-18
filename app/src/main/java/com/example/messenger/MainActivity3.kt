@@ -8,45 +8,62 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity3 : AppCompatActivity() {
-    lateinit var mail: EditText
-    lateinit var password: EditText
+    lateinit var email: EditText
+    lateinit var userPassword: EditText
     lateinit var signup: Button
     lateinit var auth: FirebaseAuth
     lateinit var login: TextView
+    private lateinit var username: EditText
+    private lateinit var mDbRef: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
-        title = "register"
-        mail = findViewById(R.id.etEmail)
-        password = findViewById(R.id.etPassword)
+        supportActionBar?.hide()
+        email = findViewById(R.id.etEmail)
+        userPassword = findViewById(R.id.etPassword)
         signup = findViewById(R.id.btnSignup)
         login = findViewById(R.id.txtLogin)
+        username = findViewById(R.id.etUsername)
         auth = FirebaseAuth.getInstance()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         signup.setOnClickListener {
-            signup()
+            val mail = email.text.toString()
+            val password = userPassword.text.toString()
+            signUp(mail, password)
         }
+
         login.setOnClickListener {
             val intent = Intent(this, LoginActivity5::class.java)
             startActivity(intent)
         }
     }
 
-    private fun signup() {
-        auth.createUserWithEmailAndPassword(mail.text.toString(), password.text.toString())
+    private fun signUp(mail: String, password: String) {
+        auth.createUserWithEmailAndPassword(mail, password)
             .addOnCompleteListener(this) { it ->
                 if (it.isSuccessful) {
+                    addUserToDatabase(username.text.toString(), mail, auth.currentUser?.uid!!)
                     val intent2 = Intent(this, MainActivity4::class.java)
-                    intent2.putExtra("name", mail.text.toString())
+                    finish()
+                    intent2.putExtra("name", mail)
                     startActivity(intent2)
                 } else {
                     Toast.makeText(this, "You already have an account", Toast.LENGTH_SHORT).show()
                 }
             }
     }
+
+    private fun addUserToDatabase(toString: String, mail: String, uid: String) {
+        mDbRef = FirebaseDatabase.getInstance().getReference()
+        mDbRef.child("user").child(uid).setValue((User(username.text.toString(), mail, uid)))
+    }
+
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()

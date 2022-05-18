@@ -2,13 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.messenger">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/msgicon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/msgicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Messenger">
+        <activity
+            android:name=".ChatOpenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactHelpActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".ContactsActivity5"
+            android:exported="false" />
         <activity
             android:name=".ChatActivity5"
             android:exported="false" />
@@ -33,6 +44,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

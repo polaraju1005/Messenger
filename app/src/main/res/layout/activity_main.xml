@@ -8,10 +8,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="89dp"
-        android:layout_height="84dp"
+        android:layout_width="289dp"
+        android:layout_height="330dp"
         android:layout_centerInParent="true"
-        app:srcCompat="@drawable/ic_baseline_message_24"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/msg"
         tools:layout_editor_absoluteX="140dp"
         tools:layout_editor_absoluteY="297dp" />
 
@@ -21,7 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/txtAuthor"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
         android:text="from"
         android:textSize="18sp" />
 
@@ -31,10 +31,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/belgrano"
         android:text="Sairaj"
         android:textColor="#0288D1"
-        android:textSize="25sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
 
