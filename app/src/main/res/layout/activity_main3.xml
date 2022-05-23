@@ -10,29 +10,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/belgrano"
         android:text="Register Yourself"
         android:textColor="#0288D1"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imgDp"
-        android:layout_width="150dp"
-        android:layout_height="139dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="150dp"
         android:src="@drawable/profile" />
 
     <EditText
         android:id="@+id/etUsername"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imgDp"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_bg"
         android:ems="10"
+        android:fontFamily="@font/belgrano"
         android:hint="Enter Username"
         android:inputType="text"
         android:padding="10dp"
@@ -41,13 +45,16 @@
 
     <EditText
         android:id="@+id/etEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etUsername"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_bg"
         android:ems="10"
+        android:fontFamily="@font/belgrano"
         android:hint="Enter Email"
         android:inputType="textEmailAddress"
         android:padding="10dp"
@@ -55,13 +62,16 @@
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etEmail"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_bg"
         android:ems="10"
+        android:fontFamily="@font/belgrano"
         android:hint="Enter Password"
         android:inputType="textPassword"
         android:padding="10dp"
@@ -75,8 +85,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:backgroundTint="#00B8D4"
+        android:fontFamily="@font/belgrano"
         android:text="Sign up"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
@@ -86,7 +97,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:text="Already have an account?"
+        android:fontFamily="@font/belgrano"
+        android:text="Already have an account? Login"
         android:textColor="#000000"
         android:textSize="18sp" />
 

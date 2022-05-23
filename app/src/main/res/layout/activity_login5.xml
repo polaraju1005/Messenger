@@ -12,9 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="120dp"
+        android:fontFamily="@font/belgrano"
         android:text="User Login"
         android:textColor="#0288D1"
-        android:textSize="24sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <ImageView
@@ -29,13 +30,16 @@
 
     <EditText
         android:id="@+id/etLoginEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imgProfile"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_bg"
         android:ems="10"
+        android:fontFamily="@font/belgrano"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="8dp"
@@ -43,13 +47,16 @@
 
     <EditText
         android:id="@+id/etLoginPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etLoginEmail"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_bg"
         android:ems="10"
+        android:fontFamily="@font/belgrano"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="8dp"
@@ -62,6 +69,7 @@
         android:layout_below="@+id/etLoginPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/belgrano"
         android:text="forgot password?"
         android:textColor="#000000"
         android:textSize="18sp" />
@@ -74,6 +82,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:backgroundTint="#00B8D4"
+        android:fontFamily="@font/belgrano"
         android:text="Login"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -85,7 +94,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:text="Register Yourself"
+        android:fontFamily="@font/belgrano"
+        android:text="Don't have an account? Sign up"
         android:textColor="#000000"
         android:textSize="18sp" />
 

@@ -23,6 +23,7 @@
         android:layout_above="@+id/txtAuthor"
         android:layout_centerHorizontal="true"
         android:text="from"
+        android:fontFamily="@font/belgrano"
         android:textSize="18sp" />
 
     <TextView

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/home">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,6 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
+                android:fontFamily="@font/belgrano"
                 android:text="Sairaj"
                 android:textColor="@color/black"
                 android:textSize="16sp"
@@ -41,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txtUsername"
                 android:layout_marginStart="8dp"
+                android:fontFamily="@font/belgrano"
                 android:text="Tap to chat"
                 android:textColor="@color/black" />
 

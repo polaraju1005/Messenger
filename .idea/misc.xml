@@ -16,22 +16,25 @@
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/drawable/msgbox_bg.xml" value="0.1" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/drawable/round_bg.xml" value="0.1625" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/drawable/sent_msg_bg.xml" value="0.157" />
+        <entry key="..\:/Users/DELL/Messenger/app/src/main/res/font/abril_fatface.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/DELL/Messenger/app/src/main/res/font/belgrano.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_chat5.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_chat_open.xml" value="0.2" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_contact_help5.xml" value="0.25" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_contacts5.xml" value="0.25" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_login5.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_login5.xml" value="0.12" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_main.xml" value="0.152" />
-        <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_main2.xml" value="0.136" />
+        <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_main2.xml" value="0.2" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_main3.xml" value="0.176" />
-        <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_main4.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/activity_main4.xml" value="0.2" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/contactview.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/home_recycler_view.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/receive.xml" value="0.1875" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/layout/sent.xml" value="0.2" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/menu/chat.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Messenger/app/src/main/res/menu/contact.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Messenger/app/src/main/res/menu/openchat.xml" value="0.25" />
       </map>
     </option>
   </component>
@@ -44,7 +47,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.264" />
+        <option name="scale" value="0.2" />
       </ProjectState>
     </option>
   </component>

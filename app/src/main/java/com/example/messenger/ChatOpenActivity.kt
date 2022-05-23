@@ -3,9 +3,12 @@ package com.example.messenger
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
@@ -22,7 +25,6 @@ class ChatOpenActivity : AppCompatActivity() {
     var receiverRoom: String? = null
     var senderRoom: String? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_open)
@@ -37,6 +39,7 @@ class ChatOpenActivity : AppCompatActivity() {
         receiverRoom = senderUid + receiverUid
 
         supportActionBar?.title = name
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         messageRecyclerView = findViewById(R.id.chatRecyclerView)
         messageBox = findViewById(R.id.messageBox)
@@ -79,5 +82,22 @@ class ChatOpenActivity : AppCompatActivity() {
             messageBox.setText("")
 
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.openchat,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.search-> Toast.makeText(this,"Search Clicked",Toast.LENGTH_SHORT).show()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

@@ -14,6 +14,8 @@ class MainActivity4 : AppCompatActivity() {
         Handler().postDelayed({display()},3000)
         email = findViewById(R.id.txtEmail)
 
+        supportActionBar?.hide()
+
         val x = intent.getStringExtra("name")
         email.text = x
     }

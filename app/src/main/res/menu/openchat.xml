@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/ic_baseline_videocam_24"
+        android:orderInCategory="100"
+        android:title="video"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/phone"
+        android:icon="@drawable/ic_baseline_phone_24"
+        android:orderInCategory="100"
+        android:title="phone"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/addToContacts"
+        android:orderInCategory="100"
+        android:title="Add to Contacts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/media"
+        android:orderInCategory="100"
+        android:title="Media, links, and docs"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/muteNotifications"
+        android:orderInCategory="100"
+        android:title="Mute notifications"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/wallpaper"
+        android:orderInCategory="100"
+        android:title="Wallpaper"
+        app:showAsAction="never" />
+
+</menu>
