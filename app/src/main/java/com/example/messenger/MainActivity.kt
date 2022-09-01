@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed(Runnable { display() },2000)
     }
-    fun display(){
+    private fun display(){
         startActivity(Intent(this,MainActivity2::class.java))
         finish()
     }

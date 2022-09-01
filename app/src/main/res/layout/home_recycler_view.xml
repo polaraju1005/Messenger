@@ -28,9 +28,9 @@
                 android:id="@+id/txtUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/belgrano"
                 android:text="Sairaj"
                 android:textColor="@color/black"
                 android:textSize="16sp"
@@ -42,8 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txtUsername"
                 android:layout_marginStart="8dp"
-                android:fontFamily="@font/belgrano"
                 android:text="Tap to chat"
+                android:fontFamily="@font/poppins"
                 android:textColor="@color/black" />
 
             <TextView

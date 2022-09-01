@@ -32,6 +32,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:hint="Type a message"
+            android:fontFamily="@font/poppins"
             android:layout_weight="85"
             android:background="@drawable/msgbox_bg"
             android:padding="10dp"/>

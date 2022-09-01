@@ -13,7 +13,6 @@ class MainActivity4 : AppCompatActivity() {
         setContentView(R.layout.activity_main4)
         Handler().postDelayed({display()},3000)
         email = findViewById(R.id.txtEmail)
-
         supportActionBar?.hide()
 
         val x = intent.getStringExtra("name")

@@ -16,6 +16,7 @@
             android:textColor="@color/white"
             android:padding="10dp"
             android:textSize="18sp"
+            android:fontFamily="@font/poppins"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="This is sent message"/>

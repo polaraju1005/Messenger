@@ -22,8 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/txtAuthor"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
         android:text="from"
-        android:fontFamily="@font/belgrano"
         android:textSize="18sp" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
-        android:fontFamily="@font/belgrano"
+        android:fontFamily="@font/poppins"
         android:text="Sairaj"
         android:textColor="#0288D1"
         android:textSize="35sp"

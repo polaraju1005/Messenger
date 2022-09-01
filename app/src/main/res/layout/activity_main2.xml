@@ -24,8 +24,8 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
-        android:text="Welcome To Messenger"
-        android:fontFamily="@font/belgrano"
+        android:fontFamily="@font/poppins"
+        android:text="Let's Connect"
         android:textColor="#0288D1"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -37,23 +37,10 @@
         android:layout_below="@+id/txtWelcome"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="70dp"
-        android:fontFamily="@font/belgrano"
+        android:fontFamily="@font/poppins"
         android:text="A new app that lets you message to your family and friends.Helps to connect with your close one's very easily and effectively."
         android:textColor="#000000"
         android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/txtSai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-Sai Polaraju Yalaganti"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:fontFamily="@font/belgrano"
-        android:textColor="#000000"
-        android:layout_below="@+id/txtDescription"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="5dp"/>
 
     <Button
         android:id="@+id/btnStart"
@@ -63,9 +50,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:backgroundTint="#00B8D4"
+        android:fontFamily="@font/poppins"
         android:text="Get started"
         android:textSize="18sp"
-        android:fontFamily="@font/belgrano"
         android:textStyle="bold" />
 
 </RelativeLayout>
