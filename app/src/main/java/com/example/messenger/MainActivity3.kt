@@ -33,9 +33,18 @@ class MainActivity3 : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         signup.setOnClickListener {
-            val mail = email.text.toString()
-            val password = userPassword.text.toString()
-            signUp(mail, password)
+            val mail = email.text.toString().trim { it <= ' ' }
+            val password = userPassword.text.toString().trim { it <= ' ' }
+            if (mail.isEmpty()) {
+                Toast.makeText(this, "Enter a valid email", Toast.LENGTH_SHORT).show()
+            } else if (password.isEmpty()) {
+                Toast.makeText(this, "Enter password", Toast.LENGTH_SHORT).show()
+            } else if (password.length < 6) {
+                Toast.makeText(this, "Password length must be 6 characters", Toast.LENGTH_SHORT)
+                    .show()
+            } else {
+                signUp(mail, password)
+            }
         }
 
         login.setOnClickListener {

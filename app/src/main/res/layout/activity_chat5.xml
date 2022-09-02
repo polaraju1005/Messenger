@@ -21,11 +21,11 @@
     <TextView
         android:id="@+id/txtUser"
         android:layout_width="wrap_content"
-        android:fontFamily="@font/poppins"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtWelcome"
         android:layout_marginStart="20dp"
-        android:text="Sairaj"
+        android:fontFamily="@font/poppins"
+        android:text="User"
         android:textColor="#651FFF"
         android:textSize="25sp"
         android:textStyle="bold" />

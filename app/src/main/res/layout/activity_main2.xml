@@ -42,17 +42,4 @@
         android:textColor="#000000"
         android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/btnStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:backgroundTint="#00B8D4"
-        android:fontFamily="@font/poppins"
-        android:text="Get started"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
 </RelativeLayout>

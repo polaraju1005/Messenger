@@ -76,13 +76,6 @@ class ChatActivity5 : AppCompatActivity() {
         when (item.itemId) {
             R.id.search -> Toast.makeText(this, "Search Clicked", Toast.LENGTH_SHORT).show()
         }
-        if (item.itemId == R.id.logout) {
-            auth.signOut()
-            val i = Intent(this, LoginActivity5::class.java)
-            finish()
-            startActivity(i)
-            return true
-        }
         return super.onOptionsItemSelected(item)
     }
 }

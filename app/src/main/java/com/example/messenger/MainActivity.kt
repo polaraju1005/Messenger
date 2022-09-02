@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         Handler().postDelayed(Runnable { display() },2000)
     }
     private fun display(){
-        startActivity(Intent(this,MainActivity2::class.java))
+        startActivity(Intent(this,LoginActivity5::class.java))
         finish()
     }
 }

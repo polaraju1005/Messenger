@@ -15,11 +15,26 @@ class LoginActivity5 : AppCompatActivity() {
     lateinit var email: EditText
     lateinit var password: EditText
     lateinit var login: Button
-    lateinit var auth: FirebaseAuth
+    private var auth: FirebaseAuth? = null
     lateinit var register: TextView
+    lateinit var userName: String
+    lateinit var userPassword: String
+    lateinit var sharedPreferences: SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        sharedPreferences = getSharedPreferences("Messenger Preferences", Context.MODE_PRIVATE)
+        if (intent != null) {
+            val i = intent.getStringExtra("logout")
+            if (i == "a") {
+                editPreferences()
+            }
+        }
+        val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
         setContentView(R.layout.activity_login5)
+        if (isLoggedIn) {
+            startActivity(Intent(this, ChatActivity5::class.java))
+            finish()
+        }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val actionBar = supportActionBar
 
@@ -32,7 +47,15 @@ class LoginActivity5 : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         login.setOnClickListener {
-            login()
+            userName = email.text.toString().trim { it <= ' ' }
+            userPassword = password.text.toString().trim { it <= ' ' }
+            if (userName.isEmpty()) {
+                Toast.makeText(this, "Please Enter email address", Toast.LENGTH_SHORT).show()
+            } else if (userPassword.isEmpty()) {
+                Toast.makeText(this, "Please enter password", Toast.LENGTH_SHORT).show()
+            } else {
+                login()
+            }
         }
 
         register.setOnClickListener {
@@ -43,17 +66,29 @@ class LoginActivity5 : AppCompatActivity() {
 
 
     private fun login() {
-        auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
+        auth!!.signInWithEmailAndPassword(userName, userPassword)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
-                    val i = Intent(this, ChatActivity5::class.java)
-                    finish()
-                    startActivity(i)
+                    Toast.makeText(this,"Logged in Successfully",Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this,MainActivity2::class.java))
+                    savePreferences()
+//                    val i = Intent(this, ChatActivity5::class.java)
+//                    startActivity(i)
                 } else {
                     Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT).show()
                 }
             }
     }
+
+    private fun savePreferences() {
+        sharedPreferences.edit().putBoolean("isLoggedIn",true).apply()
+    }
+
+    private fun editPreferences() {
+        sharedPreferences.edit().putBoolean("isLoggedIn",false).apply()
+    }
+
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
